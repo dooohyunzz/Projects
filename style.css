@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;200;300;500;900&family=Pacifico&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Work+Sans:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gowun+Batang:wght@400;700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;200;300;500;900&family=Pacifico&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Work+Sans:wght@400;600;700&display=swap');
 
 * {
     margin: 0;
@@ -77,7 +76,6 @@ body {
     line-height: 1;
     color: var(--second-color);
     transition: all 0.3s ease;
-    overflow: hidden;
     z-index: 10;
 }
 
@@ -88,7 +86,17 @@ body {
     align-items: center;
     justify-content: flex-start;
     letter-spacing: -9px;
+    transition: all 0.5s ease;
 }
+
+/* .logo-text1 span:first-child {
+    font-size: 300px;
+    margin-right: 5px;
+    margin-bottom: 57px;
+    font-family: 'Abril Fatface';
+    color: var(--sub-color);
+    font-weight: 400;
+} */
 
 @keyframes logoslide {
     0% {
@@ -106,16 +114,18 @@ body {
     align-items: center;
     justify-content: flex-end;
     letter-spacing: -15px;
+    transition: all 0.5s ease;
 }
+
 
 .logo-sub {
     position: absolute;
     bottom: 38%;
     left: 5%;
+    transition: all 0.5s ease;
 }
 
 .logo-sub span {
-    font-size: 0px;
     color: var(--sub-color);
     animation: logosubslide 1s ease forwards;
     animation-delay: 0.6s;
@@ -127,6 +137,7 @@ body {
     position: absolute;
     top: 38%;
     right: 14%;
+    transition: all 0.5s ease;
 }
 
 .logo-sub2 span {
@@ -137,6 +148,8 @@ body {
     opacity: 0;
     font-family: 'Pacifico';
 }
+
+
 
 @keyframes logosubslide {
     0% {
@@ -258,6 +271,34 @@ body {
     cursor: pointer;
     font-size: 40px;
     color: var(--second-color);
+}
+
+.textcaptions {
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.textcaptions span {
+    color: var(--sub-color);
+    font-size: 15px;
+    font-family: 'Gowun Batang';
+    font-weight: 900;
+}
+
+.textcaptions-sub {
+    padding: 20px;    
+}
+
+.textcaptions-sub span {
+    font-size: 50px;
+    font-family: 'Pacifico';
 }
 
 .chathelp {
@@ -639,6 +680,17 @@ body {
     .logo-sub2 {
         top: 35%;
     }
+    .logo-container {
+        background-image: linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+        background-size: 70px 70px;
+    }
+    .textcaptions{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 656px) {
@@ -650,6 +702,15 @@ body {
     .nav-bar {
         display: none;
     }
+    .logo-container {
+        background-image: linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+        background-size: 100px 100px;
+    }
+    .textcaptions{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
-
-
