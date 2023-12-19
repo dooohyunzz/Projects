@@ -1,20 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: #ffffff; /* 흰색 배경 */
-      margin: 0;
-      overflow: hidden;
-      background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
-      background-size: 20px 20px; /* 그리드 패턴 크기 */
-    }
-  </style>
-  <title>Grid Background</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b239e3dab6.js" crossorigin="anonymous"></script>
 </head>
-<body>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#" onclick="refresh()">D</a>
+        </div>
+        <div class="hambuger">
+            <i class="fa-solid fa-bars" onclick="humbugerOpen()"></i>
+            <ul class="nav-hambuger">
+                <li><a href="#">Main</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-xmark" onclick="humbugerClose()"></i></a></li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+        <div class="nav-bar"></div>
+    </div>
+
+
+    <div class="dark">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+
+    <div class="logo-container">
+        <div class="logo">
+            <div class="logo-text1">
+                <!-- <span>Kreative</span> -->
+            </div>
+            <div class="logo-sub2">
+                <span>BY</span>
+            </div>
+            <div class="logo-text2">
+                <span></span>
+                <!-- <span>DONGHN</span> -->
+            </div>
+            <div class="logo-sub">
+                <span>KIM</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="chathelp">
+        <div class="chathelp-logo" onclick="ChatOn()"></div>
+        <div class="chathelp-back">
+            <p>my name is dong hyun</p>
+        </div>
+    </div>
+
+    <div class="ChatMassge quit">
+        <div class="Chat-title">
+            <img src="pro.png">
+            <div class="Chat-title-man">
+                <h1>ChatMan</h1>
+                <p>Online Now</p>
+            </div>
+            <div class="Zoom-in" onclick="ChatZoomIn()">+</div>
+            <div class="Zoom-out" onclick="ChatZoomOut()">-</div>
+            <div class="Chat-out" onclick="ChatOff()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="Chat-massages">
+        </div>
+    </div>
+
+    <div class="scrollingLogo">
+        <div class="scroll-container">
+            <div class="scroll-logos">
+                <img src="images/html.png">
+                <img src="images/css.png">
+                <img src="images/js.png">
+                <img src="images/react.png">
+                <img src="images/figma.png">
+                <img src="images/github.png">
+                <img src="images/pho.png">
+                <img src="images/ts.png">
+            </div>
+    
+            <div class="scroll-logos">
+                <img src="images/html.png">
+                <img src="images/css.png">
+                <img src="images/js.png">
+                <img src="images/react.png">
+                <img src="images/figma.png">
+                <img src="images/github.png">
+                <img src="images/pho.png">
+                <img src="images/ts.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="main1">
+
+    </div>
+
+    
+
+    <script src="app.js"></script>
 </body>
 </html>
